@@ -1,0 +1,25 @@
+{
+  "name": "tp-microservices",
+  "version": "1.0.0",
+  "description": "TP Architecture Microservices",
+  "main": "index.js",
+  "scripts": {
+    "dev:gateway": "cd api-gateway && npm run dev",
+    "dev:user": "cd user-service && npm run dev",
+    "dev:post": "cd post-service && npm run dev",
+    "dev:comment": "cd comment-service && npm run dev",
+    "dev:story": "cd story-service && npm run dev",
+    "dev:all": "npm run dev:gateway & npm run dev:user & npm run dev:post & npm run dev:story & npm run dev:comment"
+  },
+  "keywords": [
+    "microservices",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "mongoose": "^9.2.1"
+  }
+}
